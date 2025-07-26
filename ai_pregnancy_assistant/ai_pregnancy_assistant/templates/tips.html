@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pregnancy Tips</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff9f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #d16b86;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f6eaf0;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #f08ca4;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #e06283;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>🤱 Pregnancy Health & Wellness Tips</h2>
+    <ul>
+        <li>Eat a balanced diet with folic acid, iron, calcium, and protein.</li>
+        <li>Stay hydrated—drink at least 8-10 glasses of water a day.</li>
+        <li>Get enough rest—aim for at least 7-9 hours of sleep per night.</li>
+        <li>Do safe exercises like walking or prenatal yoga.</li>
+        <li>Avoid alcohol, smoking, and unprescribed medications.</li>
+        <li>Schedule regular prenatal checkups with your doctor.</li>
+        <li>Monitor your emotional health—seek support when needed.</li>
+        <li>Take prenatal vitamins as prescribed.</li>
+    </ul>
+    <a href="{% url 'index' %}" class="back-link">← Go Back to Home</a>
+</div>
+</body>
+</html>

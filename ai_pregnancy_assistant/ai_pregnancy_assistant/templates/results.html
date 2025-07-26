@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logged Symptoms</title>
+    <style>
+        body {
+            background-color: #fff9f4;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #d16b86;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f8d6df;
+            color: #333;
+        }
+
+        td {
+            color: #555;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #f08ca4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #e06283;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>📝 Logged Symptoms</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Symptom</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in symptoms %}
+            <tr>
+                <td>{{ entry.date_logged }}</td>
+                <td>{{ entry.symptom }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'index' %}">← Back to Home</a>
+</div>
+</body>
+</html>
